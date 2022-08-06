@@ -1,6 +1,24 @@
 const billInput = document.getElementById('billTotalInput');
 const tipInput = document.getElementById('numberOfPeople');
 const numberOfPeopleDiv = document.getElementById('numberOfPeople');
-const perPersonTotal = document.getElementById('perPersonTotal');
+const perPersonTotalDiv = document.getElementById('perPersonTotal');
 
-console.log(billInput);
+
+let numberOfPeople = Number(numberOfPeopleDiv.innerText);
+
+
+const calculateBill = () => {
+    const bill = Number(billInput.value);
+   
+
+    const  tip = Number(tipInput.value) / 100
+ 
+    const tipAmount = bill * tip;
+
+    console.log(tip)
+
+    
+}
+ 
+
+  
